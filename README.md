@@ -1,7 +1,5 @@
 <div align="center">
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-
 # 👋 Welcome to My GitHub Profile
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=PhD+Candidate+in+Business+Administration;AI+%26+Machine+Learning+Enthusiast;Research+%26+Innovation+Driven)](https://git.io/typing-svg)
@@ -14,14 +12,14 @@
 
 <div align="center">
 
-### **MAIDA** 
+### **M-AIDA** 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Gemini API](https://img.shields.io/badge/Gemini%20API-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-*An AI-powered application built with cutting-edge technologies for enhanced productivity*
+*An advanced AI-powered application for intelligent analysis and data processing*
 
-[🔗 View Repository](https://github.com/thuyhuongctu/maida) | [📚 Docs](#)
+[🔗 View Repository](https://github.com/thuyhuongctu/M-AIDA) | [📚 Docs](#)
 
 </div>
 
@@ -115,6 +113,6 @@
 
 <div align="center">
 
-**Made with ❤️ by Huong | Powered by AI Studio**
+**Made with ❤️ by Huong**
 
 </div>
