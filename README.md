@@ -19,7 +19,7 @@
 
 *An advanced AI-powered application for intelligent analysis and data processing*
 
-[🔗 View Repository](https://github.com/thuyhuongctu/M-AIDA) | [📚 Docs](#)
+[🔗 View Repository](https://github.com/thuyhuongctu/M-AIDA) | [🌐 Live Demo](https://thuyhuongctu.github.io/M-AIDA/) | [📚 Docs](#)
 
 </div>
 
