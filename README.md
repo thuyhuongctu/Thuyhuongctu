@@ -114,8 +114,8 @@
 
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white)](https://scholar.google.com)
 [![ResearchGate](https://img.shields.io/badge/ResearchGate-00CCBB?style=for-the-badge&logo=researchgate&logoColor=white)](https://www.researchgate.net)
-[![ORCID](https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org)
-[![OSF](https://img.shields.io/badge/OSF-4A90E2?style=for-the-badge&logo=osf&logoColor=white)](https://osf.io)
+[![ORCID](https://img.shields.io/badge/ORCID-A6CE39?style=for-the-badge&logo=orcid&logoColor=white)](https://orcid.org/0000-0002-7711-2487)
+[![OSF](https://img.shields.io/badge/OSF-4A90E2?style=for-the-badge&logo=osf&logoColor=white)](https://osf.io/m25qs/)
 
 </div>
 
