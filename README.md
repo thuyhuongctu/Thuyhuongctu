@@ -2,7 +2,7 @@
 
 # 👋 Welcome to My GitHub Profile
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=PhD+Candidate+in+Business+Administration;AI+%26+Machine+Learning+Enthusiast;Research+%26+Innovation+Driven)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00FF41&center=true&vCenter=true&width=600&lines=PhD+Candidate+in+Business+Administration;AI+%26+Machine+Learning+Enthusiast;Research+%26+Innovation+Driven)](https://git.io/typing-svg)
 
 </div>
 
@@ -63,9 +63,9 @@
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=thuyhuongctu&theme=dark&show_icons=true&hide_border=true&count_private=true)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=thuyhuongctu&theme=dark&show_icons=true&hide_border=true&count_private=true&cache_seconds=86400)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=thuyhuongctu&theme=dark&hide_border=true&layout=compact)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=thuyhuongctu&theme=dark&hide_border=true&layout=compact&cache_seconds=86400)
 
 </div>
 
@@ -125,7 +125,7 @@
 
 <div align="center">
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=thuyhuongctu&theme=dark&hide_border=true)
+![GitHub Streak](https://streak-stats.demolab.com/?user=thuyhuongctu&theme=dark&hide_border=true)
 
 </div>
 
