@@ -85,7 +85,6 @@
 <details open>
 <summary><b>👨‍🎓 Academic Background</b></summary>
 
-- **Position:** Lecturer, Faculty of Economics and Law, Vinh Long University of Technology Education 🇻🇳
 - **Degree:** PhD Candidate in Business Administration
 - **University:** Can Tho University, Vietnam 🇻🇳
 - **Focus:** Internationalization Strategy & Business Performance
