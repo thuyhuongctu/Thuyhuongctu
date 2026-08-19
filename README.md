@@ -39,13 +39,22 @@
 
 [🔗 View Repository](https://github.com/thuyhuongctu/EnQuiz) | [🌐 Try EnQuiz](https://thuyhuongctu.github.io/EnQuiz/) | [📦 DOI 10.5281/zenodo.21850735](https://doi.org/10.5281/zenodo.21850735)
 
+### **ComDraft**
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![PWA](https://img.shields.io/badge/PWA-offline--first-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white)
+
+*A complete teaching package for the course Communication and Document Drafting Skills (EC1103) — five lecture decks with speaker notes, three computer-lab workbooks, a 200-question bank and eight Full-HD videos, published together with an offline-first revision app for students*
+
+[🔗 View Repository](https://github.com/thuyhuongctu/ComDraft) | [🌐 Open ComDraft](https://thuyhuongctu.github.io/ComDraft/) | [📦 DOI 10.5281/zenodo.22003676](https://doi.org/10.5281/zenodo.22003676)
+
 ### **ThuyHuong Digital 2026 Games**
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-*A collection of lightweight educational mini-games for the digital classroom*
+*A Vietnamese-history game portal — Vân Đồn (1149), Bắc Hải Đảo (1780, in 2D and 3D) and Chợ Nổi (19th century) — installable and playable offline*
 
-[🔗 View Repository](https://github.com/thuyhuongctu/ThuyHuong_Digital-2026-Games) | [🌐 Play](https://thuyhuongctu.github.io/ThuyHuong_Digital-2026-Games/)
+[🔗 View Repository](https://github.com/thuyhuongctu/ThuyHuong_Digital-2026-Games) | [🌐 Play](https://thuyhuongctu.github.io/ThuyHuong_Digital-2026-Games/) | [📦 DOI 10.5281/zenodo.21850564](https://doi.org/10.5281/zenodo.21850564)
 
 ### **Je m'appelle Hương — Academic Profile & PWA**
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -53,7 +62,7 @@
 
 *Bilingual (VI/EN) academic profile connecting the whole ecosystem — projects, publications, teaching, music library, and research news*
 
-[🔗 View Repository](https://github.com/thuyhuongctu/JESUISHUONG_WEBSITE_2026) | [🌐 Visit Page](https://thuyhuongctu.github.io/JESUISHUONG_WEBSITE_2026/)
+[🔗 View Repository](https://github.com/thuyhuongctu/JESUISHUONG_WEBSITE_2026) | [🌐 Visit Page](https://thuyhuongctu.github.io/JESUISHUONG_WEBSITE_2026/) | [📦 DOI 10.5281/zenodo.22003853](https://doi.org/10.5281/zenodo.22003853)
 
 </div>
 
@@ -76,6 +85,7 @@
 <details open>
 <summary><b>👨‍🎓 Academic Background</b></summary>
 
+- **Position:** Lecturer, Faculty of Economics and Law, Vinh Long University of Technology Education 🇻🇳
 - **Degree:** PhD Candidate in Business Administration
 - **University:** Can Tho University, Vietnam 🇻🇳
 - **Focus:** Internationalization Strategy & Business Performance
