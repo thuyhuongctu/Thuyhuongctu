@@ -1,0 +1,10 @@
+# Tệp trung gian do LaTeX sinh ra
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+missfont.log
+# Bản dựng thử theo tên tệp nguồn (bản chính thức có tên đầy đủ, được commit)
+main.pdf
+don-xin-viec.pdf

@@ -1,0 +1,129 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%-------------------------------------------------------------------------------
+%  ĐƠN XIN VIỆC (COVER LETTER) - VÕ VƯƠNG KHÁNH VY
+%
+%  Mẫu: Awesome-CV của Claud D. Park (posquit0) - CC BY-SA 4.0
+%       https://github.com/posquit0/Awesome-CV
+%
+%  Biên dịch:  make        (hoặc: xelatex don-xin-viec.tex, chạy 2 lần)
+%
+%  >>> QUAN TRỌNG: đơn này đang viết cho HỆ THỐNG NHÀ THUỐC TRUNG SƠN.
+%      Mỗi lần nộp cho công ty khác PHẢI sửa lại 4 chỗ được đánh dấu
+%      [SỬA CHO TỪNG CÔNG TY] bên dưới. Gửi đơn ghi sai tên công ty là
+%      bị loại ngay. Xem thêm HUONG-DAN-UNG-TUYEN.md.
+%-------------------------------------------------------------------------------
+
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Thiết lập chung + thông tin liên hệ (dùng chung với main.tex)
+\input{cauhinh.tex}
+
+% Bỏ câu trích dẫn ở đầu trang: CV đã có, còn lá đơn thì chính nội dung thư đã nói
+% thay. Bỏ đi cũng giúp toàn bộ lá đơn vừa đúng một trang.
+\makeatletter
+\let\@quote\undefined
+\makeatother
+
+\hypersetup{
+  pdftitle    = {Đơn xin việc - Võ Vương Khánh Vy - Dược sĩ tư vấn},
+  pdfauthor   = {Võ Vương Khánh Vy},
+  pdfsubject  = {Đơn xin việc vị trí Dược sĩ tư vấn tại TP. Cần Thơ},
+  pdfkeywords = {đơn xin việc, dược sĩ tư vấn, nhà thuốc, GPP, Cần Thơ},
+  pdflang     = {vi-VN},
+}
+
+%-------------------------------------------------------------------------------
+% THÔNG TIN LÁ ĐƠN
+%-------------------------------------------------------------------------------
+% [SỬA CHO TỪNG CÔNG TY] (1/4) — tên bộ phận và địa chỉ nơi nhận
+\recipient
+  {Bộ phận Tuyển dụng}
+  {Hệ thống Nhà thuốc Trung Sơn\\Công ty TNHH Trung Sơn Alpha\\TP. Cần Thơ}
+
+\letterdate{Cần Thơ, ngày \ngayhomnay}
+
+% [SỬA CHO TỪNG CÔNG TY] (2/4) — tên vị trí ứng tuyển
+\lettertitle{Đơn xin việc --- Vị trí Dược sĩ tư vấn}
+
+\letteropening{Kính gửi Quý Công ty,}
+\letterclosing{Trân trọng,}
+\letterenclosure[Hồ sơ đính kèm]{CV chi tiết, bằng tốt nghiệp, bảng điểm, CCCD}
+
+% Mẫu gốc chừa 3 dòng trống giữa tên người ký và dòng hồ sơ đính kèm. Thu lại còn
+% 2 dòng (vẫn đủ chỗ ký tay) để cả lá đơn vừa đúng một trang.
+\makeatletter
+\renewcommand*{\makeletterclosing}{%
+  \vspace{2mm}
+  \lettertextstyle{\@letterclosing} \\\\
+  \letternamestyle{\@firstname\ \@lastname}
+  \ifthenelse{\isundefined{\@letterenclosure}}
+    {\\}
+    {%
+      \\\\
+      \letterenclosurestyle{\@letterenclname: \@letterenclosure}%
+    }
+}
+\makeatother
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvheader[R]
+
+\makecvfooter
+  {Cần Thơ, \ngayhomnay}
+  {Võ Vương Khánh Vy~~~·~~~Đơn xin việc}
+  {}
+
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+% NỘI DUNG LÁ ĐƠN
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{Về tôi}
+Tôi là Võ Vương Khánh Vy, Dược sĩ Cao đẳng vừa tốt nghiệp loại Giỏi hệ chính quy tại
+Trường Cao đẳng Y tế An Giang. Trong suốt quá trình học, tôi vừa học vừa phụ việc và
+thực hành chuyên môn tại Nhà thuốc Võ Vương (đạt chuẩn GPP) ở P. Thốt Nốt, TP. Cần Thơ
+--- nhờ vậy, những gì học trên giảng đường đều được nhìn lại hằng ngày qua công việc
+thực tế tại quầy thuốc.
+
+Công việc tôi phụ trách là hướng dẫn khách hàng sử dụng thuốc OTC dưới sự hướng dẫn
+trực tiếp của dược sĩ phụ trách chuyên môn, làm quen với danh mục thuốc và thực phẩm
+chức năng thông dụng, sắp xếp và bảo quản thuốc đúng điều kiện, kiểm tra hạn dùng trên
+quầy theo quy định GPP, cùng việc tra cứu thuốc và lập hoá đơn trên phần mềm quản lý
+nhà thuốc.
+
+% [SỬA CHO TỪNG CÔNG TY] (3/4) — thay tên công ty và lý do chọn nơi này
+\lettersection{Vì sao tôi chọn Nhà thuốc Trung Sơn}
+Ba năm ở nhà thuốc cho tôi sự quen thuộc với nghề, nhưng tôi hiểu rằng để tiến xa hơn
+mình cần một môi trường có quy trình chuẩn hoá và được đào tạo bài bản. Nhà thuốc
+Trung Sơn là hệ thống uy tín lâu năm tại khu vực Đồng bằng sông Cửu Long, đề cao vai trò
+tư vấn chuyên môn của dược sĩ --- đây là nơi tôi tin mình sẽ học được nhiều nhất trong
+những năm đầu đi làm. Tôi cũng sinh sống tại TP. Cần Thơ nên thuận tiện đi lại giữa các
+chi nhánh và sẵn sàng nhận ca cuối tuần, ngày lễ.
+
+\lettersection{Vì sao là tôi}
+Tôi không đến với nghề từ con số không: ba năm phụ việc tại quầy thuốc đã cho tôi sự
+quen thuộc với môi trường nhà thuốc, với cách trò chuyện và lắng nghe khách hàng, cũng
+như với nhịp độ của những lúc đông khách. Tôi tin mình sẽ tiếp cận công việc nhanh và
+cần ít thời gian làm quen hơn một bạn mới hoàn toàn.
+
+Điều tôi mang theo từ những năm đó là ý thức rằng nghề dược đặt sự an toàn của người
+bệnh lên trước hết: hỏi kỹ trước khi đưa thuốc, không tư vấn ngoài phạm vi hiểu biết
+của mình, và luôn hỏi lại dược sĩ phụ trách khi chưa chắc chắn. Tôi cũng là người cẩn
+thận, chịu khó và sẵn sàng học từ những việc nhỏ nhất.
+
+Tôi đang tích lũy đủ thời gian thực hành để đề nghị cấp Chứng chỉ hành nghề dược và dự
+định học liên thông Đại học Dược trong 2--3 năm tới; tôi tìm một nơi để gắn bó lâu dài,
+không phải một chỗ làm tạm thời. Rất mong có cơ hội được trao đổi trực tiếp với Quý Công
+ty --- xin chân thành cảm ơn.
+
+\end{cvletter}
+
+%-------------------------------------------------------------------------------
+\makeletterclosing
+
+\end{document}

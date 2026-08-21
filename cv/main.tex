@@ -1,0 +1,53 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%-------------------------------------------------------------------------------
+%  CV - VÕ VƯƠNG KHÁNH VY - Dược sĩ Cao đẳng
+%  Vị trí ứng tuyển: Dược sĩ tư vấn / Nhân viên nhà thuốc tại TP. Cần Thơ
+%
+%  Mẫu: Awesome-CV của Claud D. Park (posquit0) - CC BY-SA 4.0
+%       https://github.com/posquit0/Awesome-CV
+%
+%  Biên dịch:  make        (hoặc: xelatex main.tex, chạy 2 lần)
+%
+%  >>> Đọc HUONG-DAN-UNG-TUYEN.md trước khi nộp hồ sơ cho từng công ty. <<<
+%-------------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------------
+% CẤU HÌNH
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Thiết lập chung + thông tin liên hệ (dùng chung với don-xin-viec.tex)
+\input{cauhinh.tex}
+
+% Thông tin mô tả của tệp PDF (mẫu gốc để trống)
+\hypersetup{
+  pdftitle    = {CV - Võ Vương Khánh Vy - Dược sĩ tư vấn},
+  pdfauthor   = {Võ Vương Khánh Vy},
+  pdfsubject  = {CV ứng tuyển vị trí Dược sĩ tư vấn tại TP. Cần Thơ},
+  pdfkeywords = {dược sĩ, dược sĩ tư vấn, nhà thuốc, GPP, OTC, Cần Thơ},
+  pdflang     = {vi-VN},
+}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+\makecvheader[C]
+
+\makecvfooter
+  {Cập nhật: \ngayhomnay}
+  {Võ Vương Khánh Vy~~~·~~~CV ứng tuyển Dược sĩ tư vấn}
+  {\thepage}
+
+%-------------------------------------------------------------------------------
+% NỘI DUNG
+%-------------------------------------------------------------------------------
+\input{cv/muc-tieu.tex}
+\input{cv/kinh-nghiem.tex}
+\input{cv/hoc-van.tex}
+\input{cv/chung-chi.tex}
+\input{cv/ky-nang.tex}
+\input{cv/thong-tin-them.tex}
+
+%-------------------------------------------------------------------------------
+\end{document}
