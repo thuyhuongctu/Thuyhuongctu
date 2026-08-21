@@ -17,66 +17,23 @@
 %-------------------------------------------------------------------------------
 \documentclass[11pt, a4paper]{awesome-cv}
 
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.4cm, footskip=.5cm}
-
-% Màu chủ đạo. Các lựa chọn có sẵn: awesome-emerald, awesome-skyblue, awesome-red,
-% awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
-% Ở đây dùng màu xanh y tế cho phù hợp ngành Dược.
-\definecolor{awesome}{HTML}{00796B}
-
-% Mẫu gốc tô màu 3 KÝ TỰ đầu của tiêu đề mục (\StrSplit{...}{3}). Với tiếng Việt,
-% cách này cắt ngang giữa từ ("Kin|h nghiệm", "Chứ|ng chỉ") trông như lỗi, nên ở đây
-% tô màu toàn bộ tiêu đề mục.
-\setbool{acvSectionColorHighlight}{false}
-\renewcommand*{\sectionstyle}[1]{{\color{awesome}\sectionstyleface{#1}}}
-
-% Thu gọn khoảng cách giữa các mục để CV vừa đúng 1 trang
-\renewcommand{\acvSectionTopSkip}{2.4mm}
-\renewcommand{\acvSectionContentTopSkip}{2mm}
-
-\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
-
-% Mẫu gốc dùng chữ small-caps (\scshape) cho dòng chức danh, chân trang và tên vị trí.
-% Font không có glyph small-caps cho các chữ tiếng Việt có dấu (ư, ĩ, ẳ, ơ...) nên
-% chúng rơi về chữ thường, làm dòng chữ cao thấp không đều. Thay bằng chữ IN HOA
-% để giữ đúng ý đồ thiết kế mà vẫn hiển thị đủ dấu.
-\renewcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\color{awesome}\MakeUppercase{#1}}}
-\renewcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\color{lighttext}\MakeUppercase{#1}}}
-\renewcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\color{graytext}\MakeUppercase{#1}}}
-\renewcommand*{\subentrypositionstyle}[1]{{\fontsize{7pt}{1em}\bodyfont\color{graytext}\MakeUppercase{#1}}}
-
-%-------------------------------------------------------------------------------
-% THÔNG TIN CÁ NHÂN
-%-------------------------------------------------------------------------------
-\photo[circle,edge,left]{./avatar}
-\name{Võ Vương}{Khánh Vy}
-\position{Dược sĩ Cao đẳng~~·~~Dược sĩ tư vấn}
-\address{KV. Phụng Thạnh 1, P. Thuận Hưng, TP. Cần Thơ}
-
-\mobile{0949 507 278}
-\email{vyk5045@gmail.com}
-\dateofbirth{20/10/2005}
+% Thiết lập chung + thông tin liên hệ (dùng chung với don-xin-viec.tex)
+\input{cauhinh.tex}
 
 % Thông tin mô tả của tệp PDF (mẫu gốc để trống)
 \hypersetup{
   pdftitle    = {CV - Võ Vương Khánh Vy - Dược sĩ tư vấn},
   pdfauthor   = {Võ Vương Khánh Vy},
   pdfsubject  = {CV ứng tuyển vị trí Dược sĩ tư vấn tại TP. Cần Thơ},
-  pdfkeywords = {dược sĩ, dược sĩ tư vấn, nhà thuốc, GPP, GSP, FEFO, OTC, Cần Thơ},
+  pdfkeywords = {dược sĩ, dược sĩ tư vấn, nhà thuốc, GPP, OTC, Cần Thơ},
   pdflang     = {vi-VN},
 }
-
-\quote{“Tư vấn đúng thuốc, đúng liều, đúng người --- để mỗi khách hàng quay lại vì tin tưởng.”}
 
 %-------------------------------------------------------------------------------
 \begin{document}
 
 \makecvheader[C]
 
-% Ngày tháng theo định dạng Việt Nam (\today của LaTeX trả về tiếng Anh)
-\makeatletter
-\newcommand{\ngayhomnay}{\two@digits{\day}/\two@digits{\month}/\the\year}
-\makeatother
 \makecvfooter
   {Cập nhật: \ngayhomnay}
   {Võ Vương Khánh Vy~~~·~~~CV ứng tuyển Dược sĩ tư vấn}

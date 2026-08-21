@@ -1,0 +1,58 @@
+%-------------------------------------------------------------------------------
+%  CẤU HÌNH DÙNG CHUNG cho CV (main.tex) và Đơn xin việc (don-xin-viec.tex)
+%
+%  Sửa thông tin liên hệ ở đây MỘT LẦN là cả hai tài liệu cùng cập nhật.
+%-------------------------------------------------------------------------------
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.4cm, footskip=.5cm}
+
+% Màu chủ đạo. Các lựa chọn có sẵn của Awesome-CV: awesome-emerald, awesome-skyblue,
+% awesome-red, awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete,
+% awesome-darknight. Ở đây dùng màu xanh y tế cho phù hợp ngành Dược.
+\definecolor{awesome}{HTML}{00796B}
+
+%-------------------------------------------------------------------------------
+% SỬA MẪU GỐC CHO HỢP VỚI TIẾNG VIỆT
+%-------------------------------------------------------------------------------
+% Mẫu gốc tô màu 3 KÝ TỰ đầu của tiêu đề mục (\StrSplit{...}{3}). Với tiếng Việt,
+% cách này cắt ngang giữa từ ("Kin|h nghiệm", "Chứ|ng chỉ") trông như lỗi hiển thị,
+% nên ở đây tô màu toàn bộ tiêu đề — cho cả CV lẫn đơn xin việc.
+\setbool{acvSectionColorHighlight}{false}
+\renewcommand*{\sectionstyle}[1]{{\color{awesome}\sectionstyleface{#1}}}
+\renewcommand*{\lettersectionstyle}[1]{{\color{awesome}\lettersectionstyleface{#1}}}
+
+% Mẫu gốc dùng chữ small-caps (\scshape) cho dòng chức danh, chân trang, tên vị trí
+% và địa chỉ người nhận. Font không có glyph small-caps cho các chữ tiếng Việt có dấu
+% (ư, ĩ, ẳ, ơ...) nên chúng rơi về chữ thường, làm dòng chữ cao thấp không đều.
+% Thay bằng chữ IN HOA để giữ đúng ý đồ thiết kế mà vẫn hiển thị đủ dấu.
+\renewcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\color{awesome}\MakeUppercase{#1}}}
+\renewcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\color{lighttext}\MakeUppercase{#1}}}
+\renewcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\color{graytext}\MakeUppercase{#1}}}
+\renewcommand*{\subentrypositionstyle}[1]{{\fontsize{7pt}{1em}\bodyfont\color{graytext}\MakeUppercase{#1}}}
+% Địa chỉ người nhận giữ nguyên chữ thường cho dễ đọc (tên công ty, đường, phường)
+\renewcommand*{\recipientaddressstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
+
+% Thu gọn khoảng cách giữa các mục để tài liệu vừa đúng 1 trang
+\renewcommand{\acvSectionTopSkip}{2.4mm}
+\renewcommand{\acvSectionContentTopSkip}{2mm}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Ngày tháng theo định dạng Việt Nam (\today của LaTeX trả về tiếng Anh)
+\makeatletter
+\newcommand{\ngayhomnay}{\two@digits{\day}/\two@digits{\month}/\the\year}
+\makeatother
+
+%-------------------------------------------------------------------------------
+% THÔNG TIN CÁ NHÂN
+%-------------------------------------------------------------------------------
+\photo[circle,edge,left]{./avatar}
+\name{Võ Vương}{Khánh Vy}
+\position{Dược sĩ Cao đẳng~~·~~Dược sĩ tư vấn}
+\address{KV. Phụng Thạnh 1, P. Thuận Hưng, TP. Cần Thơ}
+
+\mobile{0949 507 278}
+\email{vyk5045@gmail.com}
+\dateofbirth{20/10/2005}
+
+\quote{“Tư vấn đúng thuốc, đúng liều, đúng người --- để mỗi khách hàng quay lại vì tin tưởng.”}
