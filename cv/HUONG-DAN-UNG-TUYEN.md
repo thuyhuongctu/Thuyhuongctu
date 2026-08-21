@@ -108,8 +108,11 @@ Riêng chỗ số 3 đừng sửa qua loa mỗi cái tên — hãy viết một 
 - [ ] **Xác nhận lại phần "Thông tin thêm"**: hiện CV ghi *có thể đi làm ngay*,
       *sẵn sàng làm theo ca, cuối tuần và ngày lễ*, *sẵn sàng luân chuyển chi
       nhánh*. Nếu có điểm nào không đúng thì phải sửa hoặc xoá.
-- [ ] **Chuẩn bị bản scan**: bằng tốt nghiệp, bảng điểm, giấy chứng nhận thời gian
-      thực hành, CCCD. Nhiều nơi yêu cầu nộp kèm ngay từ vòng hồ sơ.
+- [ ] **Chuẩn bị bản scan**: bằng tốt nghiệp, bảng điểm, CCCD. Nhiều nơi yêu cầu nộp
+      kèm ngay từ vòng hồ sơ.
+- [ ] **Khi nào xin được Giấy chứng nhận thời gian thực hành chuyên môn** thì bổ sung
+      ngay vào CV (mục *Pháp lý hành nghề*) và vào danh sách hồ sơ đính kèm của đơn
+      xin việc — đây là giấy tờ nhà tuyển dụng ngành dược rất quan tâm.
 - [ ] **Đặt tên file khi gửi email**: `CV_VoVuongKhanhVy_DuocSiTuVan.pdf` và
       `DonXinViec_VoVuongKhanhVy_TrungSon.pdf` — đừng để tên `main.pdf` hay
       `CV_final_2.pdf`.
