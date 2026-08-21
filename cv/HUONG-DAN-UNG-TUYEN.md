@@ -34,13 +34,13 @@ Tin tuyển dụng Dược sĩ tư vấn của Trung Sơn yêu cầu đúng nh�
 | Giao tiếp tốt, tư duy logic, cẩn thận, tỉ mỉ | Kỹ năng → Kỹ năng mềm |
 | Tinh thần trách nhiệm, làm việc nhóm tốt | Kỹ năng → Kỹ năng mềm |
 
-> **Lưu ý về mức độ kinh nghiệm.** Hồ sơ này viết đúng thực tế: *phụ việc và thực hành
-> chuyên môn tại nhà thuốc của gia đình*, không phải nhân viên chính thức. CV **không**
+> **Lưu ý về mức độ kinh nghiệm.** Hồ sơ viết đúng phạm vi thực tế: *phụ việc và thực
+> hành chuyên môn* tại Nhà thuốc Võ Vương, không phải nhân viên chính thức. CV **không**
 > nhận các phần việc thuộc trách nhiệm của dược sĩ phụ trách như quản lý tồn kho, kiểm
-> kê định kỳ, báo cáo xuất – nhập – tồn hay liên thông Dược Quốc gia. Đây là lựa chọn
-> có chủ ý: nhà tuyển dụng ngành dược thường hỏi sâu vào những việc này khi phỏng vấn,
-> và nói quá sẽ lộ ngay. Là sinh viên mới ra trường, sự trung thực cộng với ba năm quen
-> việc thực tế đã là lợi thế đủ mạnh.
+> kê định kỳ, báo cáo xuất – nhập – tồn hay liên thông Dược Quốc gia. Đây là lựa chọn có
+> chủ ý: nhà tuyển dụng ngành dược thường hỏi sâu vào những việc này khi phỏng vấn, và
+> nói quá sẽ lộ ngay. Là sinh viên mới ra trường, ba năm quen việc thực tế cộng với sự
+> trung thực đã là lợi thế đủ mạnh.
 
 ## 3. Sửa hồ sơ cho từng nơi nộp (rất nên làm)
 
@@ -93,11 +93,11 @@ Riêng chỗ số 3 đừng sửa qua loa mỗi cái tên — hãy viết một 
 
 ## 4. Việc cần làm để hồ sơ mạnh hơn
 
-- [ ] **Chuẩn bị trả lời phỏng vấn về phần Kinh nghiệm.** Hãy nói thẳng rằng đó là
-      nhà thuốc của gia đình và bạn phụ việc trong lúc đi học — điều này hoàn toàn
-      bình thường và người tuyển dụng đánh giá cao sự thật thà. Chuẩn bị sẵn 1–2 tình
-      huống cụ thể bạn từng gặp ở quầy (ví dụ: khách hỏi thuốc cảm cho trẻ nhỏ, bạn
-      đã xử lý thế nào).
+- [ ] **Chuẩn bị trả lời phỏng vấn về phần Kinh nghiệm.** Chuẩn bị sẵn 1–2 tình huống
+      cụ thể bạn từng gặp ở quầy (ví dụ: khách hỏi thuốc cảm cho trẻ nhỏ, bạn đã xử lý
+      thế nào) — kể được tình huống thật thì thuyết phục hơn nhiều so với một dòng mô
+      tả công việc. Nếu được hỏi về mối quan hệ với nhà thuốc, cứ trả lời thẳng thắn;
+      người tuyển dụng quan tâm bạn *làm được gì*, không phải bạn quen ai.
 - [ ] **Đừng thêm vào CV những việc chưa từng làm** (quản lý tồn kho, kiểm kê, báo
       cáo xuất – nhập – tồn, liên thông Dược Quốc gia). Nếu sau này bạn thực sự làm
       những việc đó thì hãy bổ sung.
