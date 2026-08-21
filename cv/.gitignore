@@ -1,0 +1,8 @@
+# Tệp trung gian do LaTeX sinh ra
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+missfont.log
+main.pdf
