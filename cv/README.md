@@ -1,24 +1,31 @@
 # CV LaTeX — Võ Vương Khánh Vy (Dược sĩ Cao đẳng)
 
-CV một trang, hai cột, dùng để ứng tuyển vị trí **nhân viên nhà thuốc / quầy thuốc**
+CV một trang, dùng để ứng tuyển vị trí **Dược sĩ tư vấn / nhân viên nhà thuốc**
 tại TP. Cần Thơ.
 
 📄 Bản PDF đã biên dịch sẵn: **[`CV_VoVuongKhanhVy.pdf`](CV_VoVuongKhanhVy.pdf)**
+📝 Hướng dẫn nộp hồ sơ: **[`HUONG-DAN-UNG-TUYEN.md`](HUONG-DAN-UNG-TUYEN.md)**
 
 ## Nội dung thư mục
 
 | Tệp | Mô tả |
 | --- | --- |
-| `main.tex` | Nội dung CV — **sửa tệp này khi cần cập nhật thông tin** |
-| `main.cls` | Lớp trình bày (bố cục, màu sắc, các lệnh tự định nghĩa) |
-| `avatar.jpg` | Ảnh chân dung, nền đã đổi sang màu xanh của cột trái |
-| `avatar-nen-xanh-duong.jpg` | Ảnh gốc nền xanh dương (ảnh thẻ), dùng khi muốn giữ nguyên nền |
+| `main.tex` | Thông tin cá nhân, màu sắc, ảnh — **sửa vị trí ứng tuyển ở đây** |
+| `cv/muc-tieu.tex` | Mục tiêu nghề nghiệp |
+| `cv/kinh-nghiem.tex` | Kinh nghiệm làm việc |
+| `cv/hoc-van.tex` | Học vấn |
+| `cv/chung-chi.tex` | Chứng chỉ & pháp lý hành nghề |
+| `cv/ky-nang.tex` | Kỹ năng |
+| `cv/thong-tin-them.tex` | Thời gian bắt đầu, ca làm việc, người tham chiếu |
+| `awesome-cv.cls` | Lớp trình bày Awesome-CV (đã sửa nhẹ, xem cuối trang) |
+| `avatar.jpg` | Ảnh chân dung, nền trắng — dùng cho CV |
+| `avatar-nen-xanh-duong.jpg` | Ảnh thẻ nền xanh dương gốc |
 | `Makefile` | Lệnh biên dịch nhanh |
-| `LICENSE-template.txt` | Giấy phép MIT của mẫu gốc |
+| `LICENSE-template.txt` | Giấy phép CC BY-SA 4.0 của mẫu gốc |
 
 ## Cách biên dịch
 
-CV có dấu tiếng Việt nên **bắt buộc dùng XeLaTeX** (hoặc LuaLaTeX), không dùng pdfLaTeX.
+CV dùng font OpenType nên **bắt buộc dùng XeLaTeX**, không dùng pdfLaTeX.
 
 ### Cách 1 — Overleaf (dễ nhất, không cần cài gì)
 
@@ -34,57 +41,68 @@ make            # tạo ra CV_VoVuongKhanhVy.pdf
 make clean      # xoá các tệp trung gian
 ```
 
-Hoặc chạy trực tiếp (chạy 2 lần để hyperref cập nhật đúng):
+Yêu cầu: TeX Live/MiKTeX có `fontspec`, `unicode-math`, `fontawesome6`, `tcolorbox`,
+`xifthen`, `ifmtarg`, `xstring`, `setspace`, `parskip`, cùng font **Source Sans 3**
+(hoặc **Source Sans Pro** đi kèm TeX Live) và **Roboto**.
 
-```bash
-xelatex main.tex && xelatex main.tex
-```
-
-Yêu cầu: một bản TeX Live/MiKTeX có `fontspec`, `polyglossia`, `fontawesome5`,
-`paracol`, `tcolorbox`, `environ`, `adjustbox`, `anyfontsize`, `tikz`.
 Trên Ubuntu/Debian:
 
 ```bash
 sudo apt install texlive-xetex texlive-latex-extra texlive-fonts-extra \
-                 texlive-lang-other fonts-texgyre fonts-roboto-unhinted
+                 fonts-roboto-unhinted
 ```
 
 ## Cách chỉnh sửa nội dung
 
-Mọi thông tin đều nằm trong `main.tex`:
+### Đổi vị trí ứng tuyển
 
-- **Cột trái** (`leftpart`): ảnh, họ tên, chức danh, thông tin liên hệ, kỹ năng, định hướng.
-- **Cột phải** (`rightpart`): tóm tắt, kinh nghiệm, học vấn, chứng chỉ, điểm mạnh.
+Trong `main.tex`, sửa hai dòng:
 
-Một số lệnh hay dùng:
+```latex
+\position{Dược sĩ Cao đẳng{\enskip\cdotp\enskip}Dược sĩ tư vấn}
+...
+{Võ Vương Khánh Vy~~~·~~~CV ứng tuyển Dược sĩ tư vấn}   % dòng chân trang
+```
 
-| Lệnh | Công dụng |
-| --- | --- |
-| `\intro{ảnh}{họ tên}{chức danh}` | Khối đầu cột trái |
-| `\phonelink{hiển thị}{số để bấm gọi}` | Số điện thoại |
-| `\mailaddress{email}` · `\birthday{ngày}` · `\location{địa chỉ}` | Thông tin liên hệ |
-| `\skillset{tên kỹ năng}{0–100}` | Kỹ năng kèm thanh mức độ |
-| `\sideitem{nội dung}` | Gạch đầu dòng ở cột trái |
-| `\jobset{chức danh}{nơi làm việc}{thời gian}{nội dung}` | Một mục kinh nghiệm |
-| `\eduset{trường/bằng cấp}{thời gian}` | Một mục học vấn |
-| `\certset{tên chứng chỉ}{ghi chú}` | Một mục chứng chỉ (để trống `{}` nếu không có ghi chú) |
-| `\dotteddivider` | Đường kẻ chấm ngăn cách |
+và câu cuối trong `cv/muc-tieu.tex`.
 
-Đổi màu chủ đạo: sửa `\definecolor{DGreen}{HTML}{084B41}` trong `main.cls`.
+### Đổi màu chủ đạo
+
+Trong `main.tex`:
+
+```latex
+\definecolor{awesome}{HTML}{00796B}   % xanh y tế (mặc định)
+```
+
+Hoặc dùng màu có sẵn của Awesome-CV: `awesome-emerald`, `awesome-skyblue`,
+`awesome-red`, `awesome-pink`, `awesome-orange`, `awesome-nephritis`,
+`awesome-concrete`, `awesome-darknight` — bằng `\colorlet{awesome}{awesome-emerald}`.
 
 ### Thay ảnh chân dung
 
-Đặt ảnh **vuông** (tỷ lệ 1:1) tên `avatar.jpg` vào thư mục này — ảnh sẽ tự
-được cắt tròn. Nếu ảnh gốc là ảnh thẻ nền xanh dương, có thể giữ nguyên bằng cách
-sửa `main.tex` thành `\intro{avatar-nen-xanh-duong.jpg}{...}{...}`.
+Đặt ảnh **vuông** (tỷ lệ 1:1), nền trắng, tên `avatar.jpg` vào thư mục này.
+Ảnh sẽ tự được cắt tròn. Muốn ảnh vuông thay vì tròn thì sửa trong `main.tex`:
 
-## Nguồn mẫu
+```latex
+\photo[rectangle,edge,left]{./avatar}
+```
 
-Dựa trên `template-2` của [amirzenoozi/latex-cv-templates](https://github.com/amirzenoozi/latex-cv-templates)
-(MIT License). Lớp `main.cls` đã được chỉnh sửa để:
+## Nguồn mẫu & những chỗ đã sửa
 
-- chuyển sang XeLaTeX + `fontspec`/`polyglossia` cho tiếng Việt có dấu;
-- dùng `fontawesome5` (bản `fontawesome` v4 không có tệp `.otf` cho XeLaTeX);
-- tăng độ tương phản chữ trên nền xanh (`White!50` → `White!88`) để in rõ hơn;
-- bổ sung các lệnh `\birthday`, `\phonelink`, `\sideitem`, `\jobset`, `\certset`,
-  `\tightsect` và môi trường `cvitems`.
+Mẫu gốc: [Awesome-CV](https://github.com/posquit0/Awesome-CV) của Claud D. Park
+(posquit0) — giấy phép CC BY-SA 4.0, xem `LICENSE-template.txt`.
+
+`awesome-cv.cls` được sửa 2 chỗ, đều có ghi chú `%%% SỬA ĐỔI %%%` trong tệp:
+
+1. **Font dự phòng.** Bản gốc bắt buộc phải có font `Source Sans 3`, không có thì
+   biên dịch dừng. Nay tự động lùi về `Source Sans Pro` (đi kèm sẵn TeX Live, cùng
+   thiết kế, cũng đủ dấu tiếng Việt). Tương tự với `Roboto`.
+
+Ngoài ra `main.tex` ghi đè 2 thiết lập mà **không** sửa tệp lớp:
+
+2. **Màu tiêu đề mục.** Bản gốc tô màu 3 *ký tự* đầu của tiêu đề
+   (`\StrSplit{...}{3}`). Với tiếng Việt, cách này cắt ngang giữa từ
+   (`Kin|h nghiệm`, `Chứ|ng chỉ`) trông như lỗi hiển thị, nên ở đây tô màu toàn bộ
+   tiêu đề.
+3. **Khoảng cách giữa các mục** được thu gọn (`\acvSectionTopSkip`,
+   `\acvSectionContentTopSkip`) để CV vừa đúng một trang.

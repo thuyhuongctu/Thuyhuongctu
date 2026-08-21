@@ -1,6 +1,6 @@
-# Biên dịch CV bằng XeLaTeX (bắt buộc dùng XeLaTeX/LuaLaTeX để có dấu tiếng Việt)
+# Biên dịch CV bằng XeLaTeX (bắt buộc — Awesome-CV dùng fontspec/OpenType)
 PDF  := CV_VoVuongKhanhVy.pdf
-SRC  := main.tex main.cls avatar.jpg
+SRC  := main.tex awesome-cv.cls avatar.jpg $(wildcard cv/*.tex)
 
 .PHONY: all clean distclean
 

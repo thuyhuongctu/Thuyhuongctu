@@ -1,117 +1,96 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%  CV - VÕ VƯƠNG KHÁNH VY - Dược sĩ Cao đẳng                               %%
-%%  Vị trí ứng tuyển: nhân viên nhà thuốc / quầy thuốc tại TP. Cần Thơ      %%
-%%                                                                          %%
-%%  Biên dịch:  xelatex main.tex   (chạy 2 lần)                             %%
-%%  hoặc:       latexmk -xelatex main.tex                                   %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[10pt, a4paper]{main}
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+%-------------------------------------------------------------------------------
+%  CV - VÕ VƯƠNG KHÁNH VY - Dược sĩ Cao đẳng
+%  Vị trí ứng tuyển: Dược sĩ tư vấn / Nhân viên nhà thuốc tại TP. Cần Thơ
+%
+%  Mẫu: Awesome-CV của Claud D. Park (posquit0) - CC BY-SA 4.0
+%       https://github.com/posquit0/Awesome-CV
+%
+%  Biên dịch:  make        (hoặc: xelatex main.tex, chạy 2 lần)
+%
+%  >>> Đọc HUONG-DAN-UNG-TUYEN.md trước khi nộp hồ sơ cho từng công ty. <<<
+%-------------------------------------------------------------------------------
 
+%-------------------------------------------------------------------------------
+% CẤU HÌNH
+%-------------------------------------------------------------------------------
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.4cm, footskip=.5cm}
+
+% Màu chủ đạo. Các lựa chọn có sẵn: awesome-emerald, awesome-skyblue, awesome-red,
+% awesome-pink, awesome-orange, awesome-nephritis, awesome-concrete, awesome-darknight
+% Ở đây dùng màu xanh y tế cho phù hợp ngành Dược.
+\definecolor{awesome}{HTML}{00796B}
+
+% Mẫu gốc tô màu 3 KÝ TỰ đầu của tiêu đề mục (\StrSplit{...}{3}). Với tiếng Việt,
+% cách này cắt ngang giữa từ ("Kin|h nghiệm", "Chứ|ng chỉ") trông như lỗi, nên ở đây
+% tô màu toàn bộ tiêu đề mục.
+\setbool{acvSectionColorHighlight}{false}
+\renewcommand*{\sectionstyle}[1]{{\color{awesome}\sectionstyleface{#1}}}
+
+% Thu gọn khoảng cách giữa các mục để CV vừa đúng 1 trang
+\renewcommand{\acvSectionTopSkip}{2.4mm}
+\renewcommand{\acvSectionContentTopSkip}{2mm}
+
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Mẫu gốc dùng chữ small-caps (\scshape) cho dòng chức danh, chân trang và tên vị trí.
+% Font không có glyph small-caps cho các chữ tiếng Việt có dấu (ư, ĩ, ẳ, ơ...) nên
+% chúng rơi về chữ thường, làm dòng chữ cao thấp không đều. Thay bằng chữ IN HOA
+% để giữ đúng ý đồ thiết kế mà vẫn hiển thị đủ dấu.
+\renewcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\color{awesome}\MakeUppercase{#1}}}
+\renewcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\color{lighttext}\MakeUppercase{#1}}}
+\renewcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\color{graytext}\MakeUppercase{#1}}}
+\renewcommand*{\subentrypositionstyle}[1]{{\fontsize{7pt}{1em}\bodyfont\color{graytext}\MakeUppercase{#1}}}
+
+%-------------------------------------------------------------------------------
+% THÔNG TIN CÁ NHÂN
+%-------------------------------------------------------------------------------
+\photo[circle,edge,left]{./avatar}
+\name{Võ Vương}{Khánh Vy}
+\position{Dược sĩ Cao đẳng~~·~~Dược sĩ tư vấn}
+\address{KV. Phụng Thạnh 1, P. Thuận Hưng, TP. Cần Thơ}
+
+\mobile{0949 507 278}
+\email{vyk5045@gmail.com}
+\dateofbirth{20/10/2005}
+
+% Thông tin mô tả của tệp PDF (mẫu gốc để trống)
 \hypersetup{
-    pdftitle  = {CV - Võ Vương Khánh Vy - Dược sĩ Cao đẳng},
-    pdfauthor = {Võ Vương Khánh Vy},
-    pdflang   = {vi-VN},
-    colorlinks = false,
-    pdfborder  = {0 0 0},
+  pdftitle    = {CV - Võ Vương Khánh Vy - Dược sĩ tư vấn},
+  pdfauthor   = {Võ Vương Khánh Vy},
+  pdfsubject  = {CV ứng tuyển vị trí Dược sĩ tư vấn tại TP. Cần Thơ},
+  pdfkeywords = {dược sĩ, dược sĩ tư vấn, nhà thuốc, GPP, GSP, FEFO, OTC, Cần Thơ},
+  pdflang     = {vi-VN},
 }
 
+\quote{“Tư vấn đúng thuốc, đúng liều, đúng người --- để mỗi khách hàng quay lại vì tin tưởng.”}
+
+%-------------------------------------------------------------------------------
 \begin{document}
-\noindent
-%======================  CỘT TRÁI  ======================%
-\begin{leftpart}{0.34}
-    \intro{avatar.jpg}{Võ Vương\\ Khánh Vy}{Dược sĩ Cao đẳng}
 
-    \whitesect{Thông tin liên hệ}{
-        \phonelink{0949 507 278}{+84949507278} \\[3pt]
-        \mailaddress{vyk5045@gmail.com} \\[3pt]
-        \birthday{20/10/2005} \\[3pt]
-        \location{KV. Phụng Thạnh 1, P. Thuận Hưng, TP. Cần Thơ}
-    }
+\makecvheader[C]
 
-    \smallskip
-    \whitesect{Kỹ năng chuyên môn}{
-        \skillset{Tư vấn sử dụng thuốc OTC}{90}
-        \skillset{Nghiệp vụ bán lẻ thuốc GPP -- GSP}{90}
-        \skillset{Quản lý tồn kho, kiểm soát hạn dùng (FEFO)}{85}
-        \skillset{Báo cáo xuất -- nhập -- tồn}{80}
-        \skillset{Phần mềm quản lý nhà thuốc, liên thông Dược Quốc gia}{80}
-    }
+% Ngày tháng theo định dạng Việt Nam (\today của LaTeX trả về tiếng Anh)
+\makeatletter
+\newcommand{\ngayhomnay}{\two@digits{\day}/\two@digits{\month}/\the\year}
+\makeatother
+\makecvfooter
+  {Cập nhật: \ngayhomnay}
+  {Võ Vương Khánh Vy~~~·~~~CV ứng tuyển Dược sĩ tư vấn}
+  {\thepage}
 
-    \smallskip
-    \whitesect{Kỹ năng mềm}{
-        \sideitem{Giao tiếp, chăm sóc khách hàng}
-        \sideitem{Tin học văn phòng (Word, Excel)}
-        \sideitem{Làm việc nhóm, chịu được áp lực}
-        \sideitem{Cẩn thận, tỉ mỉ, trung thực}
-    }
+%-------------------------------------------------------------------------------
+% NỘI DUNG
+%-------------------------------------------------------------------------------
+\input{cv/muc-tieu.tex}
+\input{cv/kinh-nghiem.tex}
+\input{cv/hoc-van.tex}
+\input{cv/chung-chi.tex}
+\input{cv/ky-nang.tex}
+\input{cv/thong-tin-them.tex}
 
-    \smallskip
-    \whitesect{Định hướng}{
-        \small Hoàn thành Chứng chỉ hành nghề dược và học liên thông Đại học Dược
-        trong 2--3 năm tới, gắn bó lâu dài với hệ thống nhà thuốc tại TP. Cần Thơ.
-    }
-\end{leftpart}
-%======================  CỘT PHẢI  ======================%
-\begin{rightpart}{0.66}
-    \tightsect{Tóm tắt chuyên môn}{
-        Dược sĩ cao đẳng tốt nghiệp loại Giỏi, có gần 3 năm làm việc thực tế tại
-        nhà thuốc đạt chuẩn GPP song song với quá trình học. Thành thạo tư vấn
-        thuốc OTC, quản lý tồn trữ theo nguyên tắc FEFO và quy trình vận hành cơ
-        sở bán lẻ thuốc theo chuẩn GPP -- GSP. Mong muốn làm việc tại nhà thuốc,
-        quầy thuốc hoặc chuỗi nhà thuốc trên địa bàn TP. Cần Thơ.
-    }
-
-    \dotteddivider
-    \sect{Kinh nghiệm làm việc}{
-        \jobset{Nhân viên nhà thuốc (bán thời gian)}
-               {Nhà thuốc Võ Vương (GPP), P. Thốt Nốt, TP. Cần Thơ}
-               {09/2023 -- nay}{
-            \begin{cvitems}
-                \item Tư vấn, hướng dẫn sử dụng thuốc OTC cho 30--50 lượt khách/ngày
-                      --- đúng liều, đúng cách, đúng đối tượng --- dưới sự giám sát
-                      của dược sĩ phụ trách chuyên môn.
-                \item Làm việc với danh mục hơn 500 mặt hàng thuốc và thực phẩm chức
-                      năng: phân loại theo nhóm tác dụng dược lý, bảo quản đúng điều
-                      kiện nhiệt độ -- độ ẩm theo chuẩn GPP -- GSP.
-                \item Tham gia kiểm kê định kỳ hằng tháng, kiểm soát hạn dùng theo
-                      nguyên tắc FEFO, góp phần giữ tỷ lệ hàng cận date phải hủy ở
-                      mức thấp.
-                \item Hỗ trợ nhập hàng, đối chiếu hóa đơn và lập báo cáo xuất -- nhập
-                      -- tồn; phát hiện và xử lý kịp thời sai lệch số liệu tồn kho.
-                \item Duy trì lượng khách quen ổn định nhờ tư vấn tận tâm và theo dõi
-                      phản hồi sau khi sử dụng thuốc.
-            \end{cvitems}
-        }
-    }
-
-    \dotteddivider
-    \sect{Học vấn}{
-        \eduset{Cao đẳng Dược (chính quy) --- Trường Cao đẳng Y tế An Giang}
-               {2023 -- 2026 \hspace{4pt}$\vert$\hspace{4pt} Xếp loại tốt nghiệp: Giỏi}
-        \vspace{-4pt}
-        {\footnotesize\textcolor{body}{
-            Học phần trọng tâm: Dược lý, Bào chế, Kiểm nghiệm thuốc, Quản lý tồn trữ
-            thuốc (GSP), Kinh tế -- Marketing Dược, Tổ chức quản lý Dược, Dược liệu,
-            Pháp chế dược.
-        }}
-    }
-
-    \dotteddivider
-    \sect{Chứng chỉ \& pháp lý hành nghề}{
-        \certset{Giấy chứng nhận thời gian thực hành chuyên môn tại cơ sở bán lẻ thuốc đạt chuẩn GPP}{}
-        \certset{Chứng chỉ hành nghề dược}{Đang tích lũy thời gian thực hành theo quy định để đề nghị cấp}
-    }
-
-    \dotteddivider
-    \sect{Điểm mạnh}{
-        \begin{cvitems}
-            \item Gắn bó với môi trường nhà thuốc từ năm nhất --- nắm vững quy trình
-                  vận hành thực tế, có thể bắt nhịp công việc ngay, không cần đào tạo lại.
-            \item Trung thực, tuân thủ nghiêm quy định chuyên môn; tinh thần học hỏi
-                  và cầu tiến cao.
-            \item Là người địa phương, thuận tiện di chuyển và làm việc ổn định lâu
-                  dài tại TP. Cần Thơ.
-        \end{cvitems}
-    }
-\end{rightpart}
+%-------------------------------------------------------------------------------
 \end{document}
